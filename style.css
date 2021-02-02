@@ -1,15 +1,64 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  padding: 40px 0;
+}
+
 .menu {
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.content {
+  height: calc(100% - 98px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content, .img-content {
+  display: inline-block;
 }
 
 .text-content__title {
   font-family: 'PT Serif', serif;
+  width: 567px;
 }
 
 .text-content__text {
   font-family: 'Roboto', sans-serif;
+  width: 455px;
 }
 
 .button {
   font-family: 'Roboto', sans-serif;
+  width: 271px;
+}
+
+.img-content {
+  width: 770px;
+  height: 657px;
 }
