@@ -64,8 +64,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.text-content, .img-content {
+  .text-content, .img-content {
   display: inline-block;
 }
 
