@@ -29,6 +29,7 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 50%
 }
 
 .logo__circle_blue {
@@ -36,26 +37,49 @@ body {
   top: 56%;
   background: #C8DBFB;
   opacity: .7;
-  border-radius: 50%
 }
 
 .logo__circle_dark-blue {
   background: #0056EC;
-  border-radius: 50%
 }
 
 .menu {
-  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
 }
 
 .menu__item {
-  padding: 0 13px;
+  margin-right: 26px;
+  position: relative;
+  font: 500 18px/21px 'Roboto', sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.menu__item::after {
+  display: block;
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: width 0.5s;
+}
+
+.menu__item:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu__item:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .content {
