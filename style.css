@@ -11,6 +11,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  max-height: 112px;
 }
 
 .logo {
@@ -49,7 +50,7 @@ body {
 }
 
 .menu__item {
-  margin-right: 26px;
+  margin-right: 27px;
   position: relative;
   font: 500 18px/21px 'Roboto', sans-serif;
   color: #000;
@@ -79,35 +80,53 @@ body {
 }
 
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 9px;
 }
 
 .content {
-  height: calc(100% - 98px);
+  height: calc(100% - 112px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: no-repeat 100% 41% url(img/img.svg);
+  padding-right: 67%;
 }
-  .text-content, .img-content {
-  display: inline-block;
+
+.text-content {
+  padding-left: 4px;
 }
 
 .text-content__title {
-  font-family: 'PT Serif', serif;
+  font: 700 66px/87px 'PT Serif', serif;
   width: 567px;
+  margin: -120px 0 36px 0;
+}
+
+.title__highlight {
+  background: #ecf3ff;
 }
 
 .text-content__text {
-  font-family: 'Roboto', sans-serif;
+  font: 400 22px/26px 'Roboto', sans-serif;
   width: 455px;
+  margin: 0 0 45px 0;
 }
 
 .button {
-  font-family: 'Roboto', sans-serif;
-  width: 271px;
+  font: 500 18px/21px 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 28px;
+  background: #0056ec;
+  border-radius: 4px;
+  transition: 1s;
+  margin: 3px 0 0 0;
+  display: inline-block;
+  position: absolute;
 }
 
-.img-content {
-  width: 770px;
-  height: 657px;
+.button:hover {
+  background: #fff;
+  color: #0056ec;
+  border: 3px solid #0056ec;
 }
