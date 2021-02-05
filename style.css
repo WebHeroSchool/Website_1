@@ -99,7 +99,7 @@ body {
 }
 
 .title__highlight {
-  background: #ECF3FF;
+  background: #ecf3ff;
 }
 
 .text-content__text {
@@ -111,15 +111,15 @@ body {
 .button {
   font: 500 18px/21px 'Roboto', sans-serif;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 14px 16px;
-  background: #0056EC;
+  background: #0056ec;
   border-radius: 4px;
   transition: 1s;
 }
 
 .button:hover {
-  background: #FFF;
-  color: #0056EC;
-  border: 3px solid #0056EC;
+  background: #fff;
+  color: #0056ec;
+  border: 3px solid #0056ec;
 }
