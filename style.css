@@ -39,10 +39,56 @@ body {
   top: 56%;
   background: #c8dbfb;
   opacity: .7;
+  animation: circle_blue 2s 1;
+}
+
+@keyframes circle_blue {
+  0% {
+    top: 0;
+  }
+
+  60% {
+    top: 60%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 24px;
+  }
 }
 
 .logo__circle_dark-blue {
   background: #0056ec;
+  animation: circle_dblue 1s 1;
+}
+
+@keyframes circle_dblue {
+  0% {
+    top: 0;
+  }
+
+  80% {
+    top: 60%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 24px;
+  }
+}
+
+.logo__text {
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #fff;
+  }
+
+  30% {
+    letter-spacing: 15px;
+  }
+
+  80% {
+    letter-spacing: normal;
+  }
 }
 
 .menu {
@@ -128,7 +174,6 @@ body {
   padding: 15px 28px;
   background: #0056ec;
   border-radius: 4px;
-  transition: 1s;
   margin: 3px 0 0 0;
   display: inline-block;
   position: absolute;
