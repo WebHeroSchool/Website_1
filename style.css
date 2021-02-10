@@ -62,7 +62,7 @@ body {
 
 @keyframes circle_dblue {
   0% {
-    top: 0
+    top: 0;
   }
 
   80% {
